@@ -1,13 +1,13 @@
-# mexa
+# mexico-utils
 
 Validate, parse and generate Mexican data in TypeScript: CURP, RFC, CLABE, NSS, postal codes, phone numbers and amounts in words ("cantidad con letra"). No dependencies, works in Node and the browser, under 7 KB gzipped.
 
 ```bash
-npm install mexa
+npm install mexico-utils
 ```
 
 ```ts
-import { parseCurp, checkRfc, parseClabe, amountToWords } from "mexa";
+import { parseCurp, checkRfc, parseClabe, amountToWords } from "mexico-utils";
 
 parseCurp("LOOA531113HTCPBN07");
 // { birthDate: "1953-11-13", sex: "male", state: { name: "Tabasco", ... }, bornAbroad: false }

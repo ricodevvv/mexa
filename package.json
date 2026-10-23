@@ -1,5 +1,5 @@
 {
-  "name": "mexa",
+  "name": "mexico-utils",
   "version": "0.1.0",
   "description": "Validate, parse and generate Mexican data in TypeScript: CURP, RFC, CLABE, NSS, postal codes, phone numbers and amounts in words.",
   "type": "module",
