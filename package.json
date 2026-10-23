@@ -1,0 +1,57 @@
+{
+  "name": "mexa",
+  "version": "0.1.0",
+  "description": "Validate, parse and generate Mexican data in TypeScript: CURP, RFC, CLABE, NSS, postal codes, phone numbers and amounts in words.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "keywords": [
+    "mexico",
+    "curp",
+    "rfc",
+    "clabe",
+    "nss",
+    "imss",
+    "sat",
+    "codigo postal",
+    "cantidad con letra",
+    "validation"
+  ],
+  "author": "ricodevvv",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricodevvv/mexa.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
